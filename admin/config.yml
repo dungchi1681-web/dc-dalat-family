@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+  identity_url: https://dc-dalat-family.netlify.app/.netlify/identity
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+    - name: "pages"
+    label: "Quản lý trang chủ"
+    files:
+            - file: "index.html"
+        label: "Nội dung web"
+        name: "home"
+        fields:
+                    - {label: "Tiêu đề web", name: "title", widget: "string"}
+                    - label: "Danh sách 13 ảnh"
+            name: "photos"
+            widget: "list"
+            fields:
+                            - {label: "Chọn ảnh", name: "src", widget: "image"}
+                            - {label: "Chú thích ảnh", name: "alt", widget: "string"}
