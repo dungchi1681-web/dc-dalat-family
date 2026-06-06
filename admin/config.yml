@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: dungchi1681-web/dc-dalat-family
   branch: main
-  identity_url: https://dc-dalat-family.netlify.app/.netlify/identity
+  auth_scope: repo
 
 media_folder: "images"
 public_folder: "/images"
@@ -19,5 +20,5 @@ collections:
             name: "photos"
             widget: "list"
             fields:
-                            - {label: "Chọn ảnh", name: "src", widget: "image"}
+                            - {label: "Chọn ảnh", name: "src", widget: "image"}    
                             - {label: "Chú thích ảnh", name: "alt", widget: "string"}
