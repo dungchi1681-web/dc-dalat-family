@@ -18,7 +18,7 @@
             name: 'github',
             repo: 'dungchi1681-web/dc-dalat-family',
             branch: 'main',
-            base_url: base_url: 'https://github-oauth-login-4oh.pages.dev',
+            base_url: 'https://github-oauth-login-4oh.pages.dev',
             auth_endpoint: 'auth'
           },
           media_folder: 'public/img',
@@ -32,6 +32,9 @@
               slug: '{{slug}}',
               fields: [
                 {label: 'Title', name: 'title', widget: 'string'},
+                {label: 'Ngày đăng', name: 'date', widget: 'datetime'},
+                {label: 'Ảnh bìa', name: 'thumbnail', widget: 'image'},
+                {label: 'Mô tả', name: 'description', widget: 'text'},
                 {label: 'Body', name: 'body', widget: 'markdown'}
               ]
             }
